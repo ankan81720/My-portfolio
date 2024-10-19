@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="p.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sixtyfour+Convergence&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/37b0a036bf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <h1
+                style="font-family: 'Libre Baskerville', 'Sixtyfour Convergence', serif;margin-top:10px; color:rgb(213, 213, 140)">
+                My Portfolio</h1>
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">My Projects</a></li> 
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>                    
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hello,Myself <span class="name">Ankan Maity </span></h1>
+                <h1>I'm a </h1>
+                <span style="font-size: 35px; color:rgb(223, 239, 155)" id="element"></span>
+            </div>
+        </div>
+        <a href="Images/cv.pdf" download class="btn"> Download CV</a>
+    </div>
+    <!-------- About --------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="text"> As a dedicated and enthusiastic B.Tech Computer Science
+                        Engineering student, I am eager to apply my strong foundation in
+                        software development, problem-solving, and data structures to
+                        contribute effectively to innovative projects. I aim to leverage my
+                        technical skills and passion for continuous learning to secure a
+                        challenging role where I can grow professionally while driving the
+                        success of the organization.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links " onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents " id="Skills">
+                        <ul>
+                            <li><span>Languages</span><br>C, java, Python, Sql</li>
+                            <li><span>Web Technologies</span><br>HTML, CSS, Java Script, Bootstrap</li>
+                            <li><span>Soft Skills</span><br>Team Work, Problem Solving ,Communication</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="Experience" style="display:none"> 
+                        <ul>
+                            <li>Fresher</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education"style= "display:none;"> 
+                        <ul>
+                            <li><span>2022-26</span><br> Bachelor of Technology
+                                in Computer Science & Design <br>
+                                Dr. Bc Roy Engineering College,durgapur</li>
+                            <li><span>2020-22</span> <br>Higher Secondary <br>Sasati Nahala Abinash High School.
+                                grade-86%</li>
+                            <li><span>2020</span> <br>Secondary <br>Sasati Nahala Abinash High School. grade-80%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------- Sevices-------->
+    <div id="services">
+        <div id="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>"I am a passionate web developer with hands-on experience in building small projects that
+                        showcase my skills and creativity. I am continuously learning new technologies and refining my
+                        expertise. In the future, I aim to develop innovative and impactful projects that solve
+                        real-world problems and contribute meaningfully to the tech community."</p>
+                    <a href="https://www.geeksforgeeks.org/web-development/">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-vr-cardboard"></i>
+                    <h2>Ar Vr Development</h2>
+                    <p>"I am a passionate enthusiast of AR/VR development, deeply interested in exploring immersive
+                        technologies. With a specialized academic background in AR/VR, I am committed to mastering
+                        cutting-edge tools and techniques to create engaging virtual and augmented experiences. I look
+                        forward to building innovative projects that push the boundaries of what is possible in the
+                        AR/VR space."</p>
+                    <a href="https://www.plugxr.com/augmented-reality/ar-vr-development/">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------My Projects ------->
+    <div>
+        <div id="projects">
+            <div id="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="projects-list">
+                    <div class="work">
+                        <img src="Images/3.png" alt="Resume Builder">
+                        <div class="layer">
+                            <h3>Resume Builder</h3>
+                            <p>I have developed a Resume Builder website that helps users create professional resumes
+                                effortlessly. It features a user-friendly interface with customizable templates to
+                                generate polished resumes in minutes.</p>
+                            <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/4.png" alt="My Portfolio">
+                        <div class="layer">
+                            <h3>My Portfolio</h3>
+                            <p>I have created a portfolio website to showcase my projects, skills, and achievements. It
+                                provides an interactive platform for visitors to explore my work and connect with me
+                                professionally.</p>
+                            <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------contact-------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> contact - ankanmaity81720@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8172058650</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ankan.maity.7399"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_an_kan/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ankan-maity-811a59251/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="p.js"></script>
+</body>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwtldjFczakdIbONj4ePYSeVLzlB7yqFDWXIpgcAh0gMK2taJzDgAMSTZgNEj_vIrFz/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""},4000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</html>
